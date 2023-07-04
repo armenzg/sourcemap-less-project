@@ -7,6 +7,12 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+import * as Sentry from "@sentry/react";
+
+Sentry.init({
+  dsn: "https://49f2fcf8e6844e8380e259f3765a0515@o510822.ingest.sentry.io/4505472698810368",
+});
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
@@ -35,6 +41,7 @@ export default function Index() {
             Remix Docs
           </a>
         </li>
+        <button onClick={() => methodDoesNotExist()}>Break the world</button>
       </ul>
     </div>
   );
