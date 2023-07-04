@@ -7,6 +7,7 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+// Just adding a comment
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
@@ -38,7 +39,7 @@ export default function Index() {
         </li>
         <li>
           <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
+            Remix Docs 2
           </a>
         </li>
         <button onClick={() => methodDoesNotExist()}>Break the world</button>
