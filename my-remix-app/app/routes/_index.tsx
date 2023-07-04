@@ -7,6 +7,7 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+// Just adding a comment
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
